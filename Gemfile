@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'eventmachine', '= 1.0.6'
 gem 'dashing'
 gem 'thor'
 

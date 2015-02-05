@@ -75,7 +75,7 @@ GEM
       data_objects (= 0.10.14)
     do_sqlite3 (0.10.14)
       data_objects (= 0.10.14)
-    eventmachine (1.0.3)
+    eventmachine (1.0.6)
     execjs (2.0.2)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
@@ -160,6 +160,7 @@ DEPENDENCIES
   data_mapper
   dm-postgres-adapter
   dm-sqlite-adapter
+  eventmachine (= 1.0.6)
   json
   oa-openid
   oauth2
