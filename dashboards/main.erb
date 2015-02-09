@@ -18,15 +18,15 @@
 
 
     <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="eveningmode" data-view="Stmodechange" data-title="Evening" data-icon="moon-o" data-changemode="Evening" data-phrase="Evening!==TEST" data-countdown="0"></div>
+      <div data-id="eveningmode" data-view="Stmodechange" data-title="Evening" data-icon="moon-o" data-changemode="Evening" data-phrase="Evening!" data-countdown="0"></div>
     </li>
 
     <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="nightmode" data-view="Stmodechange" data-title="Good Night" data-icon="bed" data-changemode="Night" data-phrase="Good Night!==TEST" data-countdown="30"></div>
+      <div data-id="nightmode" data-view="Stmodechange" data-title="Good Night" data-icon="bed" data-changemode="Night" data-phrase="Good Night!" data-countdown="15"></div>
     </li>
 
     <li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="awaymode" data-view="Stmodechange" data-title="Goodbye" data-icon="sign-out" data-changemode="Away" data-phrase="Goodbye!==TEST" data-countdown="30"></div>
+      <div data-id="awaymode" data-view="Stmodechange" data-title="Goodbye" data-icon="sign-out" data-changemode="Away" data-phrase="Goodbye!" data-countdown="15"></div>
     </li>
 
 <!-- 
@@ -45,6 +45,10 @@
 
     <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
       <div data-id="cpagesecurity" data-view="Changepage" data-icon="ellipsis-h" data-title="Security" data-page="2" data-stagger="false" data-fasttransition="true"></div>
+    </li>
+
+    <li data-row="4" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="cpagecameras" data-view="Changepage" data-icon="ellipsis-h" data-title="Cameras" data-page="3" data-stagger="false" data-fasttransition="true"></div>
     </li>
 
 <!-- 
@@ -115,6 +119,30 @@ SECURITY
     </li>
   </ul>
 </div>
+
+
+
+<!-- 
+=================================
+CAMERAS
+=================================
+ -->
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cpage3" data-view="Changepage" data-icon="home" data-title="Home" data-page="1"></div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="text2" data-view="Text" data-text="Cameras" ></div>
+    </li>
+
+
+    <li data-row="2" data-col="1" data-sizex="3" data-sizey="3">
+      <div data-id="camera1" data-view="Cameras" data-title="Nursery"></div>
+    </li>
+  </ul>
+</div>
+
 
 
 <!-- 
