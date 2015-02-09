@@ -1,8 +1,6 @@
 <% content_for :title do %>HADashboard<% end %>
 
 
-
-
 <div class="gridster">
   <ul>
 <!-- 
@@ -10,28 +8,25 @@
     Modes, time, weather
   =================================
  -->
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="mode" data-view="Stmode" data-title="Current Mode"></div>
+    </li>
 
     <li data-row="1" data-col="3" data-sizex="2" data-sizey="2">
       <div data-id="weather" data-view="Stweather"></div>
     </li>
 
 
-    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="mode" data-view="Stmode" data-title="Current Mode"></div>
-    </li>
-
-
-    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="eveningmode" data-view="Stmodechange" data-title="Evening" data-icon="moon-o" data-changemode="Evening" data-phrase="Evening!" data-countdown="0"></div>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="eveningmode" data-view="Stmodechange" data-title="Evening" data-icon="moon-o" data-changemode="Evening" data-phrase="Evening!==TEST" data-countdown="0"></div>
     </li>
 
     <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="nightmode" data-view="Stmodechange" data-title="Good Night" data-icon="bed" data-changemode="Night" data-phrase="Good Night!" data-countdown="30"></div>
+      <div data-id="nightmode" data-view="Stmodechange" data-title="Good Night" data-icon="bed" data-changemode="Night" data-phrase="Good Night!==TEST" data-countdown="30"></div>
     </li>
 
-
-    <li data-row="3" data-col="7" data-sizex="1" data-sizey="1">
-      <div data-id="cpage1" data-view="Changepage" data-icon="arrow-right" data-title="Basement" data-page="2" data-stagger="false" data-fasttransition="true"></div>
+    <li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="awaymode" data-view="Stmodechange" data-title="Goodbye" data-icon="sign-out" data-changemode="Away" data-phrase="Goodbye!==TEST" data-countdown="30"></div>
     </li>
 
 <!-- 
@@ -39,25 +34,27 @@
     Doors
   =================================
  -->
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="garagedualcontact" data-view="Stcontact" data-title="Garage (2)" data-device="Garage Double Sensor"></div>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="garagedualcontact" data-view="Stcontact" data-title="Double Garage" data-device="Garage Double Sensor"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="garagesinglecontact" data-view="Stcontact" data-title="Garage (1)" data-device="Garage Single Sensor"></div>
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="garagesinglecontact" data-view="Stcontact" data-title="Single Garage" data-device="Garage Single Sensor"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="frontdoor" data-view="Stcontact" data-title="Front door" data-device="Front Door Sensor"></div>
+
+    <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="cpagesecurity" data-view="Changepage" data-icon="ellipsis-h" data-title="Security" data-page="2" data-stagger="false" data-fasttransition="true"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="garageentrydoor" data-view="Stcontact" data-title="Garage Entry" data-device="Garage Entry Sensor"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="patiosliderdoor" data-view="Stcontact" data-title="Patio Door" data-device="Patio Slider Sensor"></div>
-    </li>
+<!-- 
+  =================================
+    Presence
+  =================================
+ -->
+  <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="matt-presence" data-view="Stpresence" data-title="Matt" data-device="Matt's iPhone"></div>
+  </li>
 
 
 <!-- 
@@ -66,21 +63,58 @@
   =================================
  -->
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="familyall" data-view="Stdimmer" data-title="Family Main" data-device="Family Room Main Switch"></div>
+    <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-id="mainallon" data-view="Stswitch" data-title="All On" data-device="SC - Main Floor All On"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="mantlelights" data-view="Stdimmer" data-title="Mantle Lights" data-device="Family Room Fireplace Lights Switch"></div>
+    <li data-row="1" data-col="6" data-sizex="1" data-sizey="1">
+      <div data-id="mainalloff" data-view="Stswitch" data-title="All Off" data-device="SC - Main Floor All Off"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-id="maindinner" data-view="Stswitch" data-title="Dinner" data-device="SC - Main Floor Dinner"></div>
+    </li>
+
+    <li data-row="2" data-col="6" data-sizex="1" data-sizey="1">
+      <div data-id="mainevening" data-view="Stswitch" data-title="Evening" data-device="SC - Main Floor Evening"></div>
+    </li>
+
+    <li data-row="3" data-col="5" data-sizex="1" data-sizey="1">
       <div data-id="sofalamp" data-view="Stswitch" data-title="Sofa Lamp" data-device="Family Room Lamp Plug"></div>
     </li>
 
   </ul>
 </div>
 
+
+<!-- 
+=================================
+SECURITY
+=================================
+ -->
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cpage3" data-view="Changepage" data-icon="home" data-title="Home" data-page="1"></div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="text2" data-view="Text" data-text="Security" ></div>
+    </li>
+
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="frontdoor" data-view="Stcontact" data-title="Front door" data-device="Front Door Sensor"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="garageentrydoor" data-view="Stcontact" data-title="Garage Entry" data-device="Garage Entry Sensor"></div>
+    </li>
+
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="patiosliderdoor" data-view="Stcontact" data-title="Patio Door" data-device="Patio Slider Sensor"></div>
+    </li>
+  </ul>
+</div>
 
 
 <!-- 
