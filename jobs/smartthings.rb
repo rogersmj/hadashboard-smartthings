@@ -1,8 +1,5 @@
 require 'json'
 
-ENV["ST_CLIENT_ID"] = 'fda616e1-c437-4a34-b7fb-dfee4ec83076'
-ENV["ST_CLIENT_SECRET"] = '6dc03816-cfae-4e10-a831-32a7b17f2b68'
-
 # URI to the installed app root
 host_uri = ENV["DASHING_URI"] || 'http://localhost:3030'
 
