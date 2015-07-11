@@ -1,5 +1,10 @@
 require 'omniauth-heroku'
 require 'dashing'
+require 'dotenv'
+
+# Load environment variables using Dotenv. If a .env file exists, it will
+# set environment variables from that file (useful for dev environments)
+Dotenv.load
 
 configure do
   # The auth token used by external clients to get API access to the
