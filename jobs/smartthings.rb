@@ -1,4 +1,9 @@
 require 'json'
+require 'dotenv'
+
+# Load environment variables using Dotenv. If a .env file exists, it will
+# set environment variables from that file (useful for dev environments)
+Dotenv.load
 
 # URI to the installed app root
 host_uri = ENV["DASHING_URI"] || 'http://localhost:3030'
