@@ -1,4 +1,4 @@
-class Dashing.Stmode extends Dashing.Widget
+class Dashing.Stmode extends Dashing.ClickableWidget
   constructor: ->
     super
     @queryState()
@@ -18,3 +18,13 @@ class Dashing.Stmode extends Dashing.Widget
   ready: ->
 
   onData: (data) ->
+
+  onClick: (event) ->
+    if @get('pageid')?
+      page = $('#'+@get('pageid')).index() + 1
+
+      Dashing.cycleDashboardsNow(
+        boardnumber: page,
+        stagger: @get('stagger'),
+        fastTransition: @get('fasttransition'),
+        transitiontype: @get('transitiontype'))

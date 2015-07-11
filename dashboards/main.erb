@@ -1,64 +1,24 @@
 <% content_for :title do %>HADashboard<% end %>
 
 
-<div class="gridster">
+<div class="gridster" id="page_home">
   <ul>
-<!-- 
-  =================================
-    Modes, time, weather
-  =================================
- -->
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="mode" data-view="Stmode" data-title="Current Mode"></div>
-    </li>
-
-    <li data-row="1" data-col="3" data-sizex="2" data-sizey="2">
-      <div data-id="weather" data-view="Stweather"></div>
-    </li>
+    <%= erb :_weather_mode %>
 
 
-    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="eveningmode" data-view="Stmodechange" data-title="Evening" data-icon="moon-o" data-changemode="Evening" data-phrase="Evening!" data-countdown="0"></div>
-    </li>
+   
 
-    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="nightmode" data-view="Stmodechange" data-title="Good Night" data-icon="bed" data-changemode="Night" data-phrase="Good Night!" data-countdown="15"></div>
-    </li>
-
-    <li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="awaymode" data-view="Stmodechange" data-title="Goodbye" data-icon="sign-out" data-changemode="Away" data-phrase="Goodbye!" data-countdown="15"></div>
-    </li>
-
-<!-- 
-  =================================
-    Doors
-  =================================
- -->
-    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="garagedualcontact" data-view="Stcontact" data-title="Double Garage" data-device="Garage Double Sensor"></div>
-    </li>
-
-    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="garagesinglecontact" data-view="Stcontact" data-title="Single Garage" data-device="Garage Single Sensor"></div>
-    </li>
 
 
     <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="cpagesecurity" data-view="Changepage" data-icon="ellipsis-h" data-title="Security" data-page="2" data-stagger="false" data-fasttransition="true"></div>
+      <div data-id="cpagesecurity" data-view="Changepage" data-icon="ellipsis-h" data-title="Security" data-pageid="security_page" data-stagger="false" data-fasttransition="true"></div>
     </li>
 
     <li data-row="4" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="cpagecameras" data-view="Changepage" data-icon="ellipsis-h" data-title="Cameras" data-page="3" data-stagger="false" data-fasttransition="true"></div>
     </li>
 
-<!-- 
-  =================================
-    Presence
-  =================================
- -->
-  <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="matt-presence" data-view="Stpresence" data-title="Matt" data-device="Matt's iPhone"></div>
-  </li>
+
 
 
 <!-- 
@@ -67,23 +27,23 @@
   =================================
  -->
 
-    <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="mainallon" data-view="Stswitch" data-title="All On" data-device="SC - Main Floor All On"></div>
     </li>
 
-    <li data-row="1" data-col="6" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="mainalloff" data-view="Stswitch" data-title="All Off" data-device="SC - Main Floor All Off"></div>
     </li>
 
-    <li data-row="2" data-col="5" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="maindinner" data-view="Stswitch" data-title="Dinner" data-device="SC - Main Floor Dinner"></div>
     </li>
 
-    <li data-row="2" data-col="6" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="mainevening" data-view="Stswitch" data-title="Evening" data-device="SC - Main Floor Evening"></div>
     </li>
 
-    <li data-row="3" data-col="5" data-sizex="1" data-sizey="1">
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="sofalamp" data-view="Stswitch" data-title="Sofa Lamp" data-device="Family Room Lamp Plug"></div>
     </li>
 
@@ -103,12 +63,14 @@
 </div>
 
 
+<%= erb :_page_modes %>
+
 <!-- 
 =================================
 SECURITY
 =================================
  -->
-<div class="gridster">
+<div class="gridster" id="security_page">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="cpage3" data-view="Changepage" data-icon="home" data-title="Home" data-page="1"></div>
