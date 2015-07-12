@@ -4,54 +4,59 @@
 <div class="gridster" id="page_home">
   <ul>
     <%= erb :_weather_mode %>
-    
-    <li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="cpagesecurity" data-view="Changepage" data-icon="ellipsis-h" data-title="Security" data-pageid="security_page" data-stagger="false" data-fasttransition="true"></div>
-    </li>
-
-    <li data-row="4" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="cpagecameras" data-view="Changepage" data-icon="ellipsis-h" data-title="Cameras" data-page="3" data-stagger="false" data-fasttransition="true"></div>
-    </li>
-
-
-
 
 <!-- 
   =================================
-    Lighting
+    Main floor Lighting
   =================================
  -->
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="mainallon" data-view="Stswitch" data-title="All On" data-device="SC - Main Floor All On"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="mainalloff" data-view="Stswitch" data-title="All Off" data-device="SC - Main Floor All Off"></div>
-    </li>
-
-    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="maindinner" data-view="Stswitch" data-title="Dinner" data-device="SC - Main Floor Dinner"></div>
     </li>
 
-    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="mainevening" data-view="Stswitch" data-title="Evening" data-device="SC - Main Floor Evening"></div>
     </li>
 
-    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="4" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="mainalloff" data-view="Stswitch" data-title="All Off" data-icon="power-off" data-device="SC - Main Floor All Off"></div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="sofalamp" data-view="Stswitch" data-title="Sofa Lamp" data-device="Family Room Lamp Plug"></div>
+    </li>
+
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="bookshelflights" data-view="Stswitch" data-title="Bookcase" data-device="Family Bookshelf Lights"></div>
     </li>
 
 
   <!-- 
     =================================
-      FLOOR NAVIGATION
+      NAVIGATION
     =================================
    -->
 
-    <li data-row="1" data-col="7" data-sizex="1" data-sizey="1">
-      <div data-id="cpagebasement" data-view="Changepage" data-icon="ellipsis-h" data-title="Basement" data-page="4" data-stagger="false" data-fasttransition="true"></div>
+    <li data-row="3" data-col="7" data-sizex="1" data-sizey="1">
+      <div data-id="cpageupstairs" data-view="Changepage" data-icon="ellipsis-h" data-title="Lights" data-pageid="page_lights" data-stagger="false" data-fasttransition="true"></div>
     </li>
+
+    <li data-row="4" data-col="7" data-sizex="1" data-sizey="1">
+      <div data-id="cpagebasement" data-view="Changepage" data-icon="ellipsis-h" data-title="Basement" data-pageid="page_basement" data-stagger="false" data-fasttransition="true"></div>
+    </li>
+
+    <li data-row="5" data-col="7" data-sizex="1" data-sizey="1">
+      <div data-id="cpagesecurity" data-view="Changepage" data-icon="ellipsis-h" data-title="Doors" data-pageid="page_doors" data-stagger="false" data-fasttransition="true"></div>
+    </li>
+
+<!--     <li data-row="4" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="cpagecameras" data-view="Changepage" data-icon="ellipsis-h" data-title="Cameras" data-pageid="page_cameras" data-stagger="false" data-fasttransition="true"></div>
+    </li> -->
 
   </ul>
 
@@ -62,14 +67,13 @@
 
 <!-- 
 =================================
-SECURITY
+DOORS
 =================================
  -->
-<div class="gridster" id="security_page">
+<div class="gridster" id="page_doors">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="cpage3" data-view="Changepage" data-icon="home" data-title="Home" data-page="1"></div>
-    </li>
+    <%= erb :_widget_home_button %>
+
     <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
       <div data-id="text2" data-view="Text" data-text="Security" ></div>
     </li>
@@ -86,6 +90,15 @@ SECURITY
     <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="patiosliderdoor" data-view="Stcontact" data-title="Patio Door" data-device="Patio Slider Sensor"></div>
     </li>
+
+
+
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="garagesinglecontact" data-view="Stcontact" data-title="Single Garage" data-device="Garage Single Sensor"></div>
+    </li>
+     <li data-row="3" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="garagedualcontact" data-view="Stcontact" data-title="Double Garage" data-device="Garage Double Sensor"></div>
+    </li>
   </ul>
 </div>
 
@@ -93,22 +106,14 @@ SECURITY
 
 <!-- 
 =================================
-CAMERAS
+LIGHTS
 =================================
  -->
-<div class="gridster">
+<div class="gridster" id="page_lights">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="cpage3" data-view="Changepage" data-icon="home" data-title="Home" data-page="1"></div>
-    </li>
-    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
-      <div data-id="text2" data-view="Text" data-text="Cameras" ></div>
-    </li>
+    <%= erb :_widget_home_button %>
 
-
-    <li data-row="2" data-col="1" data-sizex="3" data-sizey="3">
-      <div data-id="camera1" data-view="Cameras" data-title="Nursery"></div>
-    </li>
+    
   </ul>
 </div>
 
@@ -119,7 +124,7 @@ CAMERAS
 BASEMENT
 =================================
  -->
-<div class="gridster">
+<div class="gridster" id="page_basement">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="cpage3" data-view="Changepage" data-icon="arrow-left" data-title="Back" data-page="1"></div>
