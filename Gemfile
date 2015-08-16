@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
+gem 'dotenv-rails', :require => 'dotenv/rails-now'
 
 gem 'eventmachine', '= 1.0.6'
 gem 'dashing'
