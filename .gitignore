@@ -3,3 +3,7 @@ history.yml
 persistent.db
 hadashboard.sublime-project
 hadashboard.sublime-workspace
+.idea
+
+# Ignore application configuration
+/config/application.yml

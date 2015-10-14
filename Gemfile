@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'dashing', :github => 'FlorianZ/dashing', :branch => 'master'
 gem 'thor'
 
+# Configuration/env management
+gem 'figaro'
+
 # Authentication
 gem 'oa-openid'
 gem 'omniauth-heroku', '~> 0.2.0.pre'
