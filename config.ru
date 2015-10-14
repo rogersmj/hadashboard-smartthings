@@ -2,8 +2,11 @@ require 'dashing'
 require 'rack-flash'
 require 'warden'
 require_relative 'lib/models'
+require 'dotenv'
 
 configure do
+  Dotenv.load
+
   # The auth token used by external clients to get API access to the
   # dashing widgets.
   set :auth_token, ENV["DASHING_AUTH_TOKEN"] || "foobar"

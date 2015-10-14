@@ -4,7 +4,7 @@ gem 'dashing', :github => 'FlorianZ/dashing', :branch => 'master'
 gem 'thor'
 
 # Configuration/env management
-gem 'figaro'
+gem 'dotenv'
 
 # Authentication
 gem 'oa-openid'
